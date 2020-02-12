@@ -2,6 +2,10 @@
   "name": "node_k8s_status",
   "version": "0.0.1",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rommelandrea/node_k8s_status"
+  },
   "main": "dist/server.js",
   "scripts": {
     "prod": "NODE_ENV=production node ./dist/server.js",
@@ -9,7 +13,7 @@
     "build": "tsc -p .",
     "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
     "compile": "tsc -p .",
-    "test": "jest --coverage --verbose --runInBand ./tests"
+    "test": "jest --forceExit --coverage --verbose"
   },
   "author": "Andrea Romanello aka Rommel",
   "license": "MIT",
@@ -24,7 +28,14 @@
     "@types/dotenv": "^8.2.0",
     "@types/errorhandler": "^1.5.0",
     "@types/express": "^4.17.2",
+    "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
+    "@types/supertest": "^2.0.8",
+    "chai": "^4.2.0",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
     "tsc-watch": "^4.1.0",
     "tslint": "^6.0.0",
     "tslint-config-airbnb": "^5.11.2",

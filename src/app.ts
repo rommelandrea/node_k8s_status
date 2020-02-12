@@ -32,4 +32,5 @@ app.get('/health', async (req, res) => {
   res.json(status);
 });
 
+module.exports = app;
 export default app;
